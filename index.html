@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>Egyszerű 2D Platformer Játék</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1 class="centered" tabindex="0">Egyszerű 2D platformer játék</h1>
+    <div id="game-container"></div>
+    <div id="info" aria-live="polite" aria-atomic="true">
+        <span id="level-info">Játék szint: 1</span>
+        <span id="score-info">Pontszám: 0</span>
+    </div>
+    <div id="controls" role="region" aria-label="Játék vezérlők és útmutató">
+        <p><strong>Mozgás:</strong> ← és → nyilak vagy érintőgombok</p>
+        <p><strong>Ugrás:</strong> FEL nyíl vagy képernyőn a "Ugrás" gombra</p>
+        <p>A cél: gyűjtsd össze az összes érmét és menj a kapuhoz a következő szinthez!</p>
+        <div class="centered">
+            <button id="start-btn" class="btn-primary" aria-label="Játék indítása">Játék indítása</button>
+            <button id="jump-btn" class="btn-primary" aria-label="Ugrás" style="display:none; margin-left: 16px;">Ugrás</button>
+        </div>
+        <p style="font-size:0.75rem; margin-top: 12px; color: #aaa;">Ez a játék reszponzív és támogatja billentyűzetet és érintést is.</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
